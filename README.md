@@ -1,7 +1,7 @@
 # kintsugi-stack-java
 > Write once, run anywhere.
 
-![alt text](/images/image.png)
+![alt text](image.png)
 
 - Author: [Kintsugi-Programmer](https://github.com/kintsugi-programmer)
 
@@ -115,7 +115,7 @@
 
 ## Introduction to Java
 
-![alt text](/images/image-1.png)
+![alt text](image-1.png)
 
 ### What is Java?
 - **Java** is an **Object-Oriented Programming Language**
@@ -190,7 +190,7 @@ Execution involves three main steps.
     *   It converts the Bytecode into **Native Code** (machine code, zeros and ones) so the program can run on the specific machine.
 
 ## Basic Java Program Structure
-![alt text](/images/image-6.png)
+![alt text](image-6.png)
 ```java
 // package com.kintsugistack.javaessentials; // used at serious java project, rn vsc java extension is handling .java process to .class, etc etc to direct simple run ;)
 
@@ -277,7 +277,7 @@ An IDE (Integrated Development Environment), such as IntelliJ, is used to write 
 
 ## Data Types
 
-![alt text](/images/image-7.png)
+![alt text](image-7.png)
 
 ```java
 ```
@@ -408,7 +408,7 @@ int intVal = (int) longVal;           // Explicit cast needed
 *   **Reason:** Converting a larger container (like a bucket) into a smaller one (like a jug) can cause **overflow and data loss** (e.g., loss of the decimal part when converting `float` to `long`).
 
 ## String Class (Strings)
-![alt text](/images/image-8.png)
+![alt text](image-8.png)
 
 **String** is a **Class**, not a primitive data type.
 
@@ -509,7 +509,7 @@ text.toLowerCase();         // "hello world"
 *   `replace()` (replaces characters/substrings).
 
 ## Operators
-![alt text](/images/image-13.png)
+![alt text](image-13.png)
 
 ### Arithmetic Operators
 Used for mathematical calculations.
@@ -647,7 +647,7 @@ int rightShift = a >> 1; // 0010 = 2
 
 ## Control Statements
 
-![alt text](/images/image-12.png)
+![alt text](image-12.png)
 
 ### If Statements
 Used to execute code blocks based on conditions.
@@ -756,7 +756,7 @@ boolean isEven = (a % 2 == 0) ? true : false;
 
 ## Loops
 
-![alt text](/images/image-11.png)
+![alt text](image-11.png)
 
 Loops are used when a task needs to be performed repeatedly.
 
@@ -846,7 +846,7 @@ for (int num : numbers) {
 
 ## Arrays
 
-![alt text](/images/image-10.png)
+![alt text](image-10.png)
 
 An array is a **data structure that stores a fixed size sequential collection of elements of the same type**.
 
@@ -924,7 +924,7 @@ for (int num : numbers) {
 
 ## Object-Oriented Programming
 
-![alt text](/images/image-9.png)
+![alt text](image-9.png)
 
 Java works primarily with Classes and Objects.
 
@@ -1502,7 +1502,7 @@ class Main {
 ```
 ## Multithreading
 
-![alt text](/images/image-2.png)
+![alt text](image-2.png)
 
 ### Core Concepts
 
@@ -1644,7 +1644,7 @@ class Main {
 ```
 ## Exception Handling
 
-![alt text](/images/image-3.png)
+![alt text](image-3.png)
 
 An **Exception** is an event that occurs during program execution that **disrupts the normal flow** of the program.
 
@@ -1679,7 +1679,7 @@ class Main {
 
 ## Collections Framework
 
-![alt text](/images/image-4.png)
+![alt text](image-4.png)
 
 The Collection Framework, introduced in Java 1.2, consists of many interfaces and classes that help in **managing groups of objects**.
 
@@ -1892,7 +1892,7 @@ collection.clear();
 
 ## Others
 
-![alt text](/images/image-5.png)
+![alt text](image-5.png)
 
 ### Java Memory Management
 - **Stack**: Stores primitive variables and method call information
