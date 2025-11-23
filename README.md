@@ -1123,6 +1123,9 @@ class Calculator {
 ```
 
 ## Advanced OOP Concepts
+
+![alt text](<unnamed (1).png>)
+
 ### Encapsulation
 The practice of grouping fields and methods within a class (like a capsule).
 
