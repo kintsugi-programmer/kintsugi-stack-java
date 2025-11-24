@@ -38,7 +38,7 @@
       - [Checking Min/Max Values](#checking-minmax-values)
     - [Primitive vs. Wrapper Classes](#primitive-vs-wrapper-classes)
     - [Type Conversion](#type-conversion)
-      - [Widening Conversion (Implicit/Automatic)](#widening-conversion-implicitautomatic)
+      - [**Widening** Conversion (Implicit/Automatic)](#widening-conversion-implicitautomatic)
       - [Narrowing Conversion (Explicit/Manual)](#narrowing-conversion-explicitmanual)
   - [String Class (Strings)](#string-class-strings)
     - [String Creation Methods](#string-creation-methods)
@@ -305,7 +305,7 @@ long d = 4L;    // Range: -2⁶³ to 2⁶³-1 (8 bytes)
 
 **Important Notes:**
 - Add 'L' suffix for long literals
-- Default integral type is `int`
+- Default integral type is `int`, i.e. default number datatype is integer.
 - Each type has different memory allocation
 
 #### Floating Point (Decimal Numbers) Data Types
@@ -322,6 +322,8 @@ Used for numbers containing decimal points.
 float e = 3.14f;    // ~7 significant digits (4 bytes)
 double f = 3.14159; // ~15 significant digits (8 bytes)
 ```
+
+> if exceed limits, it will get rounded-off
 
 **Important Notes:**
 - Add 'f' suffix for float literals
@@ -382,7 +384,7 @@ System.out.println("Float max: " + Float.MAX_VALUE);
 
 ### Type Conversion
 
-#### Widening Conversion (Implicit/Automatic)
+#### **Widening** Conversion (Implicit/Automatic)
 ```java
 byte byteVal = 10;
 short shortVal = byteVal;    // OK - smaller to larger
@@ -1124,7 +1126,7 @@ class Calculator {
 
 ## Advanced OOP Concepts
 
-![alt text](<unnamed (1).png>)
+![alt text](image-14.png)
 
 ### Encapsulation
 The practice of grouping fields and methods within a class (like a capsule).
