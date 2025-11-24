@@ -165,7 +165,7 @@ JDK (Java Development Kit)
   - Configuration files (memory allocation settings)
   - JVM
 
-> It(JRE) does **not** contain development tools.
+> JRE does **not** contain development tools.
 
 ### JVM (Java Virtual Machine)
 - **Purpose**: The actual engine where Java programs execute
@@ -590,6 +590,48 @@ int intVal = (int) longVal;           // Explicit cast needed
 ![alt text](image-8.png)
 
 ```java
+        // String
+        String t = "Hi"; // Using String Literal // in String pool
+        String u = new String("Hi"); // Using Constructer // at Heap
+        String v = "Hi"; // Point/Refer to same Location at String pool
+        System.out.println("String Datatype"); 
+        System.out.println("---");
+        System.out.println("Same Reference/Address of 1&3:same pool ? :"+(t==v));
+        System.out.println("Same Reference/Address of 1:pool 2:heap ? :"+(t==u));
+            // == 
+                // 1 == 1 // Here Checking Data, Primitive data, Checking Value
+                // t == v // Here Checking Object, Checking Reference, not Value, Use .equals() for eqality check
+        System.out.println("Same Data of 1&3:same pool ? : "+ (t.equals(v)));
+        System.out.println("Same Data of 1:pool 2:heap ? :"+(t.equals(v)));
+        // Because of String Pool stuff, Strings are Immutable 
+        String w = "Hello";
+        System.out.println("Example:"+w);
+        w.toUpperCase();// return Uppercase, but not modify w
+        w = w.toUpperCase(); // Reassign 
+        System.out.println("Example Reassign to new:"+w);
+        w = w.toLowerCase(); // Reassign 
+        System.out.println("Example Reassign to new:"+w);
+        System.out.println("Example Length:"+w.length());
+        System.out.println("Example Character at 0th Index:"+w.charAt(0));
+        System.out.println("Example Contains \"ll\":"+w.contains("ll") );
+        System.out.println("Example SubString 0 to 2:"+w.substring(0,2));
+        w=w.replace("ll", "LL"); // this too doesn't direct modify
+        System.out.println("Example Replace ll with LL:"+w);
+        System.out.println();
+        // String Datatype
+        // ---
+        // Same Reference/Address of 1&3:same pool ? :true
+        // Same Reference/Address of 1:pool 2:heap ? :false
+        // Same Data of 1&3:same pool ? : true
+        // Same Data of 1:pool 2:heap ? :true
+        // Example:Hello
+        // Example Reassign to new:HELLO
+        // Example Reassign to new:hello
+        // Example Length:5
+        // Example Character at 0th Index:h
+        // Example Contains "ll":true
+        // Example SubString 0 to 2:he
+        // Example Replace ll with LL:heLLo
 ```
 
 **String** is a **Class**, not a primitive data type.
