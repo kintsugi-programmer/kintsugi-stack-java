@@ -1,7 +1,7 @@
 // package com.kintsugistack.javaessentials.datatypes; 
 public class App {// Class
     public static void main(String[] args){ // Main Method/Runner/Driver Code
-
+        // Data Types
         byte a = 12;
         // byte a = 200; // out of range (-128 to 127)
         System.out.println("Byte Range");
