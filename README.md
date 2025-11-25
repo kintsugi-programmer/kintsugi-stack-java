@@ -1,9 +1,9 @@
 # kintsugi-stack-java
 > Write once, run anywhere.
 
-![alt text](image.png)
-
 - Author: [Kintsugi-Programmer](https://github.com/kintsugi-programmer)
+
+![alt text](image.png)
 
 > Disclaimer: The content presented here is a curated blend of my personal learning journey, experiences, open-source documentation, and invaluable knowledge gained from diverse sources. I do not claim sole ownership over all the material; this is a community-driven effort to learn, share, and grow together.
 
@@ -68,7 +68,7 @@
     - [Array Indexing](#array-indexing)
     - [Array Operations](#array-operations)
     - [Array Characteristics](#array-characteristics)
-  - [Object-Oriented Programming](#object-oriented-programming)
+  - [Object-Oriented Programming System](#object-oriented-programming-system)
     - [Key Pillars of OOPs](#key-pillars-of-oops)
     - [Classes and Objects](#classes-and-objects)
       - [Class Definition](#class-definition)
@@ -81,7 +81,7 @@
   - [Advanced OOP Concepts](#advanced-oop-concepts)
     - [Encapsulation](#encapsulation)
     - [Inheritance](#inheritance)
-    - [Polymorphism (Many Forms)](#polymorphism-many-forms)
+    - [Polymorphism (Poly:Many, Morph:Forms)](#polymorphism-polymany-morphforms)
       - [Compile-Time Polymorphism (Method Overloading)](#compile-time-polymorphism-method-overloading)
       - [Run-Time Polymorphism (Method Overriding)](#run-time-polymorphism-method-overriding)
     - [Abstraction](#abstraction)
@@ -735,6 +735,147 @@ text.toLowerCase();         // "hello world"
 ## Operators
 ![alt text](image-13.png)
 
+```java
+        // Operators
+        // Arithmatic Operators
+        int x=10, y=5;
+        System.out.println("Arithmatic Operators");
+        System.out.println("---");
+        System.out.println("Example x="+x+" , y="+y);
+        System.out.println("Example x+y ="+(x+y));
+        System.out.println("Example x-y ="+(x-y));
+        System.out.println("Example x*y ="+(x*y));
+        System.out.println("Example x/y ="+(x/y)); // Int too...
+        System.out.println("Example x%y ="+(x%y));
+        System.out.println("Example 3.0 / 2.0 ="+(3.0/2.0)); // Float
+        System.out.println();
+        // Arithmatic Operators
+        // ---
+        // Example x=10 , y=5
+        // Example x+y =15
+        // Example x-y =5
+        // Example x*y =50
+        // Example x/y =2
+        // Example x%y =0
+        // Example 3.0 / 2.0 =1.5
+
+        // Increment/Decrement Operators
+            System.out.println("Increment/Decrement Operators");
+            System.out.println("---");
+        int z = 0;
+            System.out.println("z = "+z);
+        int result1 = z++; // result1 = z = 0, then ++, z=1
+            System.out.println("z++ returns = "+result1+" & z = "+z + " [Pre-Increment]");
+        int result2 = ++z; // ++, z=2, result2 = z = 2 
+            System.out.println("++z returns = "+result2+" & z = "+z + " [Post-Increment]");
+        int result3 = z--; // result3 = z = 2, --, z=1
+            System.out.println("z-- returns = "+result3+" & z = "+z + " [Pre-Decrement]");
+        int result4 = --z; // --, z=0, result4 = z = 0     
+            System.out.println("--z returns = "+result4+" & z = "+z + " [Post-Decrement]");
+            System.out.println();
+        // Increment/Decrement Operators
+        // ---
+        // z = 0
+        // z++ returns = 0 & z = 1 [Pre-Increment]
+        // ++z returns = 2 & z = 2 [Post-Increment]
+        // z-- returns = 2 & z = 1 [Pre-Decrement]
+        // --z returns = 0 & z = 0 [Post-Decrement]
+
+        // Relational Operators
+        System.out.println("Relational Operators");
+        System.out.println("---");
+        int a1=10,b1=20;
+        System.out.println("Example a1= "+a1+"& b1 = "+b1);
+        System.out.println("a1>b1 : "+(a1>b1));
+        System.out.println("a1<b1 : "+(a1<b1));
+        System.out.println("a1==b1 : "+(a1==b1));
+        System.out.println("a1!=b1 : "+(a1!=b1));
+        System.out.println("a1>=b1 : "+(a1>=b1));
+        System.out.println("a1<=b1 : "+(a1<=b1));
+        System.out.println();
+        // Relational Operators
+        // ---
+        // Example a1= 10& b1 = 20
+        // a1>b1 : false
+        // a1<b1 : true
+        // a1==b1 : false
+        // a1!=b1 : true
+        // a1>=b1 : false
+        // a1<=b1 : true
+
+        // Logical Operators
+        System.out.println("Logical Operators");
+        System.out.println("---");
+        System.out.println("AND && Operator");
+        System.out.println("true && true = "+(true&&true));
+        System.out.println("true && false = "+(true&&false));
+        System.out.println("false && true = "+(false&&true));
+        System.out.println("false && false = "+(false&&false));
+        System.out.println("OR || Operator");
+        System.out.println("true || true = "+(true||true));
+        System.out.println("true || false = "+(true||false));
+        System.out.println("false || true = "+(false||true));
+        System.out.println("false || false = "+(false||false));
+        System.out.println("NOT ! Operator");
+        System.out.println("!false = "+(!false));
+        System.out.println("!true = "+(!true));
+        System.out.println();
+        // Logical Operators
+        // ---
+        // AND && Operator
+        // true && true = true
+        // true && false = false
+        // false && true = false
+        // false && false = false
+        // OR || Operator
+        // true || true = true
+        // true || false = true
+        // false || true = true
+        // false || false = false
+        // NOT ! Operator
+        // !false = true
+        // !true = false
+        
+        // Bitwise Operators
+        System.out.println("Bitwise Operators");
+        System.out.println("---");
+        int c1=5,d1=3;
+        System.out.println("Example c1 "+(Integer.toBinaryString(c1))+" = "+c1+"& d1 "+(Integer.toBinaryString(d1))+" = "+d1);
+        System.out.println("0101 & 0011 = 0001 = "+(c1&d1));
+        System.out.println("0101 | 0011 = 0111 = "+(c1|d1));
+        System.out.println("0101 ^ 0011 = 0110 = "+(c1^d1));
+        System.out.println("! 0101 = 1010 &2s Comp and 1 add= "+(~c1));
+        System.out.println("! 0011 = 1100 &2s Comp and 1 add= "+(~d1));
+        System.out.println("0101 << 1 = 1010 = "+(c1<<1));
+        System.out.println("0101 >> 1 = 0010 = "+(c1>>1));
+        // Bitwise Operators
+        // ---
+        // Example c1 101 = 5& d1 11 = 3
+        // 0101 & 0011 = 0001 = 1
+        // 0101 | 0011 = 0111 = 7
+        // 0101 ^ 0011 = 0110 = 6
+        // ! 0101 = 1010 &2s Comp and 1 add= -6
+        // ! 0011 = 1100 &2s Comp and 1 add= -4
+        // 0101 << 1 = 1010 = 10
+        // 0101 >> 1 = 0010 = 2
+
+        // about ~number, eg: ~5
+        // 00000000 00000000 00000000 00000101   (5)
+        // 11111111 11111111 11111111 11111010   (~5)
+            // , AFTER NEGATION
+            // , Conflict with Sign of Sign Numbers
+                // 0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  → positive
+                // 1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  → negative
+        // 00000000 00000000 00000000 00000101   (positive 5)
+        // 11111111 11111111 11111111 11111010   (negative ?)
+        // So Now we use 2nds Comp, (as its easy 5 + (-5) = 0 , Using 2’s complement, a CPU can add both with plain binary addition, no special subtraction circuit needed.)
+            // 11111111 11111111 11111111 11111010
+            // 00000000 00000000 00000000 00000101 (invert bits)
+            // 00000000 00000000 00000000 00000110 (add 1) = 6(that 6 is not the result.That 6 is just part of the process to find which negative number the original binary represents.)
+            // so its -6 , ~5 = -6
+        // ~x  =  -(x+1)
+```
+
 ### Arithmetic Operators
 Used for mathematical calculations.
 *   `+` (Addition)
@@ -846,9 +987,16 @@ Used to perform operations on the **binary** representation of numbers (bits).
 | `<<` | Left Shift | Shifts the bits to the left. |
 | `>>` | Right Shift | Shifts the bits to the right. |
 
+> Integer.toBinaryString(i) : returns Binary representation of number
+
+> ~x  =  -(x+1)
+
 ```java
 int a = 5;   // Binary: 0101
 int b = 3;   // Binary: 0011
+
+Integer.toBinaryString(a) // 0101
+Integer.toBinaryString(b) // 0011
 
 // Bitwise AND (&)
 int and = a & b;    // 0001 = 1
@@ -868,10 +1016,36 @@ int leftShift = a << 1;  // 1010 = 10
 // Right Shift (>>)
 int rightShift = a >> 1; // 0010 = 2
 ```
+```java
+        // about ~number, eg: ~5
+        // 00000000 00000000 00000000 00000101   (5)
+        // 11111111 11111111 11111111 11111010   (~5)
+            // , AFTER NEGATION
+            // , Conflict with Sign of Sign Numbers
+                // 0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  → positive
+                // 1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  → negative
+        // 00000000 00000000 00000000 00000101   (positive 5)
+        // 11111111 11111111 11111111 11111010   (negative ?)
+        // So Now we use 2nds Comp, (as its easy 5 + (-5) = 0 , Using 2’s complement, a CPU can add both with plain binary addition, no special subtraction circuit needed.)
+            // 11111111 11111111 11111111 11111010
+            // 00000000 00000000 00000000 00000101 (invert bits)
+            // 00000000 00000000 00000000 00000110 (add 1) = 6(that 6 is not the result.That 6 is just part of the process to find which negative number the original binary represents.)
+            // so its -6 , ~5 = -6
+        // ~x  =  -(x+1)
+```
 
 ## Control Statements
 
 ![alt text](image-12.png)
+
+```java
+// package com.kintsugistack.javaessentials.controlflow; 
+public class App {
+    public static void main(String[] args){
+        // Future Prac.
+    }
+}
+```
 
 ### If Statements
 Used to execute code blocks based on conditions.
@@ -979,6 +1153,14 @@ boolean isEven = (a % 2 == 0) ? true : false;
 ```
 
 ## Loops
+```java
+// package com.kintsugistack.javaessentials.controlflow; 
+public class App {
+    public static void main(String[] args){
+        // Future Prac.
+    }
+}
+```
 
 ![alt text](image-11.png)
 
@@ -1005,6 +1187,7 @@ for (initialization; condition_check; increment) {
 }
 ```
 
+> was made as tweak to while loop where there is no need to make new vars outside scope, created,managed&deleted within the loop.
 
 *   **Structure:** The parentheses contain three parts, separated by semicolons.
     ```java
@@ -1069,6 +1252,14 @@ for (int num : numbers) {
 ```
 
 ## Arrays
+```java
+// package com.kintsugistack.javaessentials.datatypes; 
+public class App {
+    public static void main(String[] args){
+        // Future Prac.
+    }
+}
+```
 
 ![alt text](image-10.png)
 
@@ -1146,9 +1337,29 @@ for (int num : numbers) {
   - Boolean: false
   - Objects: null
 
-## Object-Oriented Programming
+## Object-Oriented Programming System
 
 ![alt text](image-9.png)
+```java
+// package com.kintsugistack.javaessentials.oops; // used at serious java project, rn vsc java extension is handling .java process to .class, etc etc to direct simple run ;)
+
+public class App {// Class
+    public static void main(String[] args){ // Main Method/Runner/Driver Code
+        System.out.println("I am Kintsugi-Programmer");
+
+    }
+}
+```
+
+OOPs is a Programming Paradigm that uses objects and classes to design and implement software solutions.
+
+key Concepts of OOPs in java
+- Class
+- Object
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
 
 Java works primarily with Classes and Objects.
 
@@ -1236,6 +1447,8 @@ student2.displayInfo();     // Displays Bob's info
 ### Constructors
 A constructor is a method used specifically to **initialize a new object**.
 
+> Constrcutors helps to initialize fields
+
 *   **Default Constructor:** If no constructor is written, a hidden default constructor (with no arguments) is provided.
 *   **Custom Constructor:** Can accept parameters to set initial field values when the object is created.
     ```java
@@ -1249,6 +1462,7 @@ class Car {
     String color;
     
     // Default Constructor
+    // WOAH, Now This is Pure Understanding !!!
     Car() {
         color = "Unknown";
     }
@@ -1404,12 +1618,18 @@ Allows a **Child Class (Subclass)** to **acquire properties and methods** from a
     2.  **Multilevel Inheritance:** A chain where a class extends a parent, which extends a grandparent, etc..
     3.  **Hierarchical Inheritance:** Multiple classes extend the same parent class.
 *   **Multiple Inheritance:** **Java does NOT support multiple inheritance** (extending two classes simultaneously).
+    *   eg: in a scenario, camera, phone, music player classes can be embedded to smartphone
+        *   as smartphone can clickPic(), playMusic(), call()
+        *   But its not allowed to achieve from inheritance as 
+            *   `class SmartPhone extends Camera, Phone, MusicPlayer` command
+                *   Can Take All properties of Camera, Phone, MusicPlayer
+                *   Even their other properties like `turnOn()`,`lightOn()`,`rollIn()`,`shutterOpen()` of Camera
     *   **Reason:** Ambiguity arises if both parent classes have a method with the same signature (e.g., `turnOn()`). The JVM would not know which one to execute.
     *   **Solution:** Achieved using **Interfaces**.
 
 ```java
 class Animal {
-    void eat() {
+    void eat() { // as all animals eat food
         System.out.println("This animal eats food");
     }
 }
@@ -1475,18 +1695,22 @@ class Dog extends Animal {
     }
 }
 ```
-### Polymorphism (Many Forms)
+### Polymorphism (Poly:Many, Morph:Forms)
 
 Allows methods to perform different tasks based on the object calling them.
 
+Two Types :
+- Run-Time Polymorphism (Method Overriding)
+- Compile-Time Polymorphism (Method Overloading)
+
 #### Compile-Time Polymorphism (Method Overloading)
 
-The compiler determines which method to call based on the arguments provided.
+- Method Overloading in Java is a feature; 
+- that allows a class to have multiple methods with the same name but different parameter lists.
+- It enables a method to perform different tasks depending on the arguments passed to it.
 
-*   **Definition:** Multiple methods within the same class have the **same name** but a **different parameter list** (different number, type, or order of arguments).
-
-*   **Example:** An `add` method designed to take two integers, and another `add` method designed to take three integers.
 ```java
+// Different Numbers of Parameters
 class Calculator {
     int add(int a, int b) { // Two parameters
         return a + b;
@@ -1505,32 +1729,83 @@ class Main {
     }
 }
 ```
+```java
+// Different Datatypes of Parameters
+class Printer {
+    void print(String s) {
+        System.out.println("String: " + s);
+    }
+
+    void print(int num) {
+        System.out.println("Integer: " + num);
+    }
+
+    void print(double d) {
+        System.out.println("Double: " + d);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Printer printer = new Printer();
+        printer.print("Hello, World!"); // Output: String: Hello, World!
+        printer.print(100);              // Output: Integer: 100
+        printer.print(3.14);             // Output: Double: 3.14
+    }
+}
+```
+```java
+// Different Order of Parameters
+class Display {
+    void show(String s, int num) {
+        System.out.println("String: " + s + ", Number: " + num);
+    }
+
+    void show(int num, String s) {
+        System.out.println("Number: " + num + ", String: " + s);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Display display = new Display();
+        display.show("Java", 101); // Output: String: Java, Number: 101
+        display.show(202, "OOPS"); // Output: Number: 202, String: OOPS
+    }
+}
+```
 #### Run-Time Polymorphism (Method Overriding)
 
-The JVM determines which method to call dynamically during execution (Run Time).
+- Run-time polymorphism is achieved through method overriding;
+- where a subclass provides a specific implementation of a method already defined in its parent class. 
+- The method to be called is determined at runtime based on the object.
 
-*   **Method Overriding:** A Child Class provides a **specific, new definition** for a method already present in its Parent Class.
-
-*   **Execution:** When a Parent Class reference holds a Child Class object (`Animal animal1 = new Dog();`), the method call (`animal1.sound()`) will execute the overridden method in the **actual object type** (`Dog`'s `bark()`).
 ```java
-
 class Animal {
     void sound() {
-        System.out.println("Some generic animal sound");
+        System.out.println("Animal makes a sound");
     }
 }
 
 class Dog extends Animal {
-    @Override
     void sound() {
-        System.out.println("Dog barks");
+        System.out.println("Dog barks"); // auto override when this class is used 
     }
 }
 
-class Main {
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows"); // auto override when this class is used 
+    }
+}
+
+public class Main {
     public static void main(String[] args) {
-        Animal animal = new Dog(); // Parent reference, Child object
-        animal.sound(); // Calls Dog's sound method
+        Animal animal1 = new Dog(); // Upcasting
+        Animal animal2 = new Cat(); // Upcasting
+
+        animal1.sound(); // Calls Dog's overridden method: "Dog barks"
+        animal2.sound(); // Calls Cat's overridden method: "Cat meows"
     }
 }
 ```
@@ -1543,6 +1818,12 @@ Focuses on **showing only essential details** while **hiding the underlying impl
 *   Achieved through **Abstract Classes** and **Interfaces**.
 
 #### Abstract Classes
+
+> - Abstract Class
+>   - Declared using the abstract keyword.
+>   - Can include both abstract methods (methods without a body) and concrete methods (methods with a body).
+>   - Cannot be instantiated directly.
+>   - Acts as a blueprint for subclasses, which must implement the abstract methods.
 
 Used to provide a **structure (ढांचा)** that future classes must follow.
 
@@ -1560,58 +1841,84 @@ Used to provide a **structure (ढांचा)** that future classes must follo
 
 *   **Object Creation:** You **cannot** create an object (instance) of an abstract class.
 ```java
-abstract class Animal {
-    String name;
-    
-    Animal(String name) { // Constructor
-        this.name = name;
+public class Test {
+    public static void main(String[] args) {
+        Animal bob = new Dog();
+        Animal bobbyy = new Cat();
+
+        bob.sayBye();
+        bobbyy.sayBye();
+        bob.sleep();
+        bobbyy.sleep();
     }
-    
-    abstract void sound(); // Abstract method
-    
-    void sleep() { // Concrete method
-        System.out.println(name + " is sleeping");
+}
+
+abstract class Animal {
+    // Abstract method
+    public abstract void sayHello(); // no need to write as its gonna override later
+    public abstract void sayBye(); // no need to write as its gonna override later
+
+    // Concrete method 
+    public void sleep() {
+        System.out.println("zzzz..."); // this is common default same stuff in all childrens
     }
 }
 
 class Dog extends Animal {
-    Dog(String name) {
-        super(name);
+    public void sayHello() {
+        System.out.println("Woof");
     }
-    
-    @Override
-    void sound() {
-        System.out.println(name + " barks");
+    public void sayBye() {
+        System.out.println("Woof Woof");
     }
 }
 
-class Main {
-    public static void main(String[] args) {
-        Dog dog = new Dog("Buddy");
-        dog.sound();
-        dog.sleep();
+class Cat extends Animal {
+    public void sayHello() {
+        System.out.println("Meow");
+    }
+    public void sayBye() {
+        System.out.println("Meow Meow");
     }
 }
 ```
+
 #### Interfaces
 
-A **blueprint for a class** used to achieve abstraction and **multiple inheritance**.
+```
+Class --> Blueprint for Object
+Interface --> Blueprint for Class
+```
 
+*   By Interface, We Achive `Abstraction` + `MULTIPLE Inheritance`
 *   **Implementation:** Classes use the keyword **`implements`** (unlike `extends` for inheritance).
-
-*   **Fields:** Interfaces can **only** have **static constants**. These fields are implicitly `public static final`. Instance variables are not allowed.
-
-    *   *Access:* Static fields can be accessed directly via the interface name, without an instance.
-
+*   **Fields:** Interfaces can **only** have **static constants**. 
+    *   These fields are implicitly `public static final`. 
+        *   `final` : In Java, to make Object not modifiable, we use `final` keyword, eg: `final int numberOfBatteries=1 ;`
+        *   `static` : In Java, to use inner stuff of a class, we first have to create instance of that class; BUT, if we    use  `static` in inner stuff of class, then we can access it even outside the class & not even need to make instance of the class.
+        *   NOW `final` & `static` are default everwhere applied inside interface class; SO NO NEED TO WRITE; it's implicit !!!
+*   Instance variables are not allowed.
+*   **Access:** Static fields can be accessed directly via the interface name, without an instance.
 *   **Constructors:** Interfaces cannot have constructors.
-
 *   **Methods:** Traditionally, all methods are abstract (no body).
-
+*   Interfaces can have
+    *   Abstract Methods
+    *   Static Constants
+    *   Static Methods (Java 8+ Features)
+    *   Default Methods (Java 8+ Features)
 *   **Java 8+ Features (New Method Types):**
+    *   **Static Methods:** 
+        *   Used for utility operations that are RELATED to the interface but don't need instance Stat
+        *   Can be accessed directly via the interface(not through instance). 
+        *   Cannot be overridden by implementing classes.
+    *   **Default Methods:** 
+        *   Provide a **generic implementation**. 
+        *   Provide optional functionality to implementing classes
+        *   These *can* be overridden by implementing classes if a specific implementation is needed.
+        *   Can use other interface methods (abstract or default)
+        *   Called through Instance
 
-    *   **Static Methods:** Utility operations that can be accessed directly via the interface. Cannot be overridden by implementing classes.
-
-    *   **Default Methods:** Provide a **generic implementation**. These *can* be overridden by implementing classes if a specific implementation is needed.
+Interface vs Abstract Class :
 
 | Abstract Class | Interface |
 | :--- | :--- |
@@ -1675,6 +1982,7 @@ class Smartphone implements Mobile, MusicPlayer {
 ```
 #### Interface Features (Java 8+)
 ```java
+// Simple Eg: Static Methods & Default Methods
 interface PaymentValidator {
     // Abstract method
     boolean validatePayment();
@@ -1693,11 +2001,73 @@ interface PaymentValidator {
     int MAX_RETRY_ATTEMPTS = 3;
 }
 ```
+```java
+// Complex Eg: Static Methods
+interface PaymentValidator {
+    boolean validatePayment(Payment payment);
+
+    // Static utility method - helper functions related to validation
+    // No need to put in other children funcs like PayPal, Stripe in Future etc.
+    static boolean isValidCreditCard(String cardNumber) {
+        // Luhn algorithm check
+        return cardNumber.length() == 16;
+    }
+
+    static boolean isValidAmount(double amount) {
+        return amount > 0 & amount < 1000000;
+    }
+}
+
+class PayPalValidator implements PaymentValidator {
+    @Override
+    public boolean validatePayment(Payment payment) {
+        // First use static utility method
+        if (!PaymentValidator.isValidAmount(payment.getAmount())) {
+            return false;
+        }
+
+        // Then do PayPal specific validation
+        return true;
+    }
+}
+```
+```java
+// Complex Eg: Default Methods
+interface PaymentProcessor {
+    void processPayment(Payment payment);
+
+    // Default method using abstract method
+    default void processPayments(List<Payment> payments) {
+        for (Payment payment : payments) {
+            processPayment(payment);
+        }
+    }
+
+    // Default method with common implementation
+    // Was made to Override
+    default void validateAndProcess(Payment payment) {
+        if (payment.getAmount() <= 0) {
+            throw new IllegalArgumentException("Invalid amount");
+        }
+        processPayment(payment);
+    }
+}
+
+class StripeProcessor implements PaymentProcessor {
+    @Override
+    public void processPayment(Payment payment) {
+        // Stripe specific implementation
+    }
+
+    // Can use default processPayments() as is
+    // Can override validateAndProcess() if needed
+}
+```
 ### Access Modifiers
 
 Used to control the accessibility of classes, methods, and fields.
 
-| Modifier | Within Class | Within Package | Subclass (Any Package) | Everywhere |
+| Access Modifier | Scope Within the Class | Scope Within the Package | Scope in Subclasses (Different Package) | Scope Everywhere |
 | :--- | :--- | :--- | :--- | :--- |
 | **`private`** | Yes | No | No | No |
 | **Default** (No keyword) | Yes | Yes | No | No |
@@ -1705,6 +2075,7 @@ Used to control the accessibility of classes, methods, and fields.
 | **`public`** | Yes | Yes | Yes | Yes |
 
 *   **Protected Access:** In a different package, a `protected` field can only be accessed by a class that **extends** (is a subclass of) the class where the field is declared.
+    *   Implement ?
 ```java
 class Example {
     private int privateVar = 1;
@@ -1730,25 +2101,60 @@ class Main {
 ## Multithreading
 
 ![alt text](image-2.png)
+```java
+// package com.kintsugistack.javaessentials.multithreading; // used at serious java project, rn vsc java extension is handling .java process to .class, etc etc to direct simple run ;)
+
+public class App {// Class
+    public static void main(String[] args){ // Main Method/Runner/Driver Code
+        System.out.println("I am Kintsugi-Programmer");
+
+    }
+}
+```
 
 ### Core Concepts
 
+*   **CPU:** The CPU, often referred to as the brain of the computer, is responsible for executing instructions from programs. It performs basic arithmetic, logic, control, and input/output operations specified by the instructions. eg: Intel i7, Ryzen 7
+
 *   **Core:** An individual processing unit within a CPU. Modern CPUs have multiple cores, enabling them to perform multiple tasks simultaneously (**True Parallel Execution**).
-
-*   **Process:** A running application (e.g., Firefox, Word). A process can have multiple threads.
-
-*   **Thread:** The **smallest unit of processing**. Threads within the same process share the same resources but run independently.
-
+    *   layman eg: A quad-core processor has four cores, allowing it to perform four tasks simultaneously. For instance, one core could handle your web browser, another your music player, another a download manager, and another a background system update.
+*   **Program:** A program is a set of instructions written in a programming language that tells the computer how to perform a specific task. 
+    *   Microsoft Word is a program that allows users to create and edit documents.
+*   **Process:** A process is an instance of a program that is being executed. When a program runs, the operating system creates a process to manage its execution. When we open Microsoft Word, it becomes a process in the operating system. 
+    *   A running application (e.g., Firefox, Word). A process can have multiple threads.
+*   **Thread:** A thread is the smallest unit of execution within a process. A process can have multiple threads, which share the same resources but can run independently.
+    *   A web browser like Google Chrome might use multiple threads for different tabs, with each tab running as a separate thread.
 *   **Multitasking:** The operating system's ability to run multiple **processes** simultaneously.
-
     *   In a **Single Core** system, this is managed by fast switching (time slicing) by the OS and JVM, creating the illusion of concurrency.
+        *   eg: os will switch b/w browser and calculator such fast that, you would have illusion of them working simuntaneously
+    *   In a **Multi Core** system,  true parallel execution occurs, with tasks distributed across cores. The OS scheduler balances the load, ensuring efficient and responsive system performance.
+    *   eg: We are browsing the internet while listening to music and downloading a file.
+    *   Multitasking utilizes the capabilities of a CPU and its cores. When an operating system performs multitasking, it can assign different tasks to different cores. This is more efficient than assigning all tasks to a single core.
+*   **Multithreading:** The ability to execute multiple **threads** within a **single process** concurrently. It is more **granular** than multitasking, operating at the thread level within the application.
+    *   eg: A web browser can use multithreading by having separate threads for rendering the page, running JavaScript, and managing user inputs. This makes the browser more responsive and efficient.
+    *   eg: A word processor running spell check and managing user input concurrently.
 
-    *   In a **Multi Core** system, the JVM distributes threads across cores for true parallel execution.
+> Multitasking can be achieved through multithreading where each task is divided into threads that are managed concurrently.While multitasking typically refers to the running of multiple applications, multithreading is more granular, dealing with multiple threads within the same application or process.
 
-*   **Multithreading:** The ability to execute multiple **threads** within a **single process**. It is more **granular** than multitasking, operating at the thread level within the application.
+> Multitasking can be achieved through multithreading where each task is divided into threads that are managed concurrently.While multitasking typically refers to the running of multiple applications, multithreading is more granular, dealing with multiple threads within the same application or process.
 
-    *   *Example:* A word processor running spell check and managing user input concurrently.
+> Multitasking operates at the level of processes, which are the operating system's primary units of execution.Multithreading operates at the level of threads, which are smaller units within a process.
 
+> Multitasking allows us to run multiple applications simultaneously, improving productivity and system utilization.Multithreading allows a single application to perform multiple tasks at the same time, improving application performance and responsiveness.
+
+> The office manager (operating system) assigns different employees (processes) to work on different projects (applications) simultaneously. Each employee works on a different project independently.
+Within a single project (application), a team (process) of employees (threads) works on different parts of the project at the same time, collaborating and sharing resources.
+
+> Java provides robust support for multithreading, allowing developers to create applications that can perform multiple tasks simultaneously, improving performance and responsiveness.
+
+> In Java, multithreading is the concurrent execution of two or more threads to maximize the utilization of the CPU. Java's multithreading capabilities are part of the java.lang package, making it easy to implement concurrent execution.
+
+> In a single-core environment, Java's multithreading is managed by the JVM and the OS, which switch between threads to give the illusion of concurrency.The threads share the single core, and time-slicing is used to manage thread execution.
+
+> In a multi-core environment, Java's multithreading can take full advantage of the available cores.The JVM can distribute threads across multiple cores, allowing true parallel execution of threads.
+> 01:50:20 Left
+
+> A thread is a lightweight process, the smallest unit of processing. Java supports multithreading through its java.lang.Thread class and the java.lang.Runnable interface.
 *   **Main Thread:** When a Java program starts, the thread responsible for executing the `main` method starts immediately.
 ```java
 // Example showing main thread
@@ -1872,6 +2278,16 @@ class Main {
 ## Exception Handling
 
 ![alt text](image-3.png)
+```java
+// package com.kintsugistack.javaessentials.exception; // used at serious java project, rn vsc java extension is handling .java process to .class, etc etc to direct simple run ;)
+
+public class App {// Class
+    public static void main(String[] args){ // Main Method/Runner/Driver Code
+        System.out.println("I am Kintsugi-Programmer");
+
+    }
+}
+```
 
 An **Exception** is an event that occurs during program execution that **disrupts the normal flow** of the program.
 
@@ -1907,6 +2323,16 @@ class Main {
 ## Collections Framework
 
 ![alt text](image-4.png)
+```java
+// package com.kintsugistack.javaessentials.collectionframework; // used at serious java project, rn vsc java extension is handling .java process to .class, etc etc to direct simple run ;)
+
+public class App {// Class
+    public static void main(String[] args){ // Main Method/Runner/Driver Code
+        System.out.println("I am Kintsugi-Programmer");
+
+    }
+}
+```
 
 The Collection Framework, introduced in Java 1.2, consists of many interfaces and classes that help in **managing groups of objects**.
 

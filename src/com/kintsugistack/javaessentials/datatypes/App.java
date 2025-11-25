@@ -233,7 +233,134 @@ public class App {// Class
         System.out.println("Example x/y ="+(x/y)); // Int too...
         System.out.println("Example x%y ="+(x%y));
         System.out.println("Example 3.0 / 2.0 ="+(3.0/2.0)); // Float
-        System.out.println()
+        System.out.println();
+        // Arithmatic Operators
+        // ---
+        // Example x=10 , y=5
+        // Example x+y =15
+        // Example x-y =5
+        // Example x*y =50
+        // Example x/y =2
+        // Example x%y =0
+        // Example 3.0 / 2.0 =1.5
+
+        // Increment/Decrement Operators
+            System.out.println("Increment/Decrement Operators");
+            System.out.println("---");
+        int z = 0;
+            System.out.println("z = "+z);
+        int result1 = z++; // result1 = z = 0, then ++, z=1
+            System.out.println("z++ returns = "+result1+" & z = "+z + " [Pre-Increment]");
+        int result2 = ++z; // ++, z=2, result2 = z = 2 
+            System.out.println("++z returns = "+result2+" & z = "+z + " [Post-Increment]");
+        int result3 = z--; // result3 = z = 2, --, z=1
+            System.out.println("z-- returns = "+result3+" & z = "+z + " [Pre-Decrement]");
+        int result4 = --z; // --, z=0, result4 = z = 0     
+            System.out.println("--z returns = "+result4+" & z = "+z + " [Post-Decrement]");
+            System.out.println();
+        // Increment/Decrement Operators
+        // ---
+        // z = 0
+        // z++ returns = 0 & z = 1 [Pre-Increment]
+        // ++z returns = 2 & z = 2 [Post-Increment]
+        // z-- returns = 2 & z = 1 [Pre-Decrement]
+        // --z returns = 0 & z = 0 [Post-Decrement]
+
+        // Relational Operators
+        System.out.println("Relational Operators");
+        System.out.println("---");
+        int a1=10,b1=20;
+        System.out.println("Example a1= "+a1+"& b1 = "+b1);
+        System.out.println("a1>b1 : "+(a1>b1));
+        System.out.println("a1<b1 : "+(a1<b1));
+        System.out.println("a1==b1 : "+(a1==b1));
+        System.out.println("a1!=b1 : "+(a1!=b1));
+        System.out.println("a1>=b1 : "+(a1>=b1));
+        System.out.println("a1<=b1 : "+(a1<=b1));
+        System.out.println();
+        // Relational Operators
+        // ---
+        // Example a1= 10& b1 = 20
+        // a1>b1 : false
+        // a1<b1 : true
+        // a1==b1 : false
+        // a1!=b1 : true
+        // a1>=b1 : false
+        // a1<=b1 : true
+
+        // Logical Operators
+        System.out.println("Logical Operators");
+        System.out.println("---");
+        System.out.println("AND && Operator");
+        System.out.println("true && true = "+(true&&true));
+        System.out.println("true && false = "+(true&&false));
+        System.out.println("false && true = "+(false&&true));
+        System.out.println("false && false = "+(false&&false));
+        System.out.println("OR || Operator");
+        System.out.println("true || true = "+(true||true));
+        System.out.println("true || false = "+(true||false));
+        System.out.println("false || true = "+(false||true));
+        System.out.println("false || false = "+(false||false));
+        System.out.println("NOT ! Operator");
+        System.out.println("!false = "+(!false));
+        System.out.println("!true = "+(!true));
+        System.out.println();
+        // Logical Operators
+        // ---
+        // AND && Operator
+        // true && true = true
+        // true && false = false
+        // false && true = false
+        // false && false = false
+        // OR || Operator
+        // true || true = true
+        // true || false = true
+        // false || true = true
+        // false || false = false
+        // NOT ! Operator
+        // !false = true
+        // !true = false
+        
+        // Bitwise Operators
+        System.out.println("Bitwise Operators");
+        System.out.println("---");
+        int c1=5,d1=3;
+        System.out.println("Example c1 "+(Integer.toBinaryString(c1))+" = "+c1+"& d1 "+(Integer.toBinaryString(d1))+" = "+d1);
+        System.out.println("0101 & 0011 = 0001 = "+(c1&d1));
+        System.out.println("0101 | 0011 = 0111 = "+(c1|d1));
+        System.out.println("0101 ^ 0011 = 0110 = "+(c1^d1));
+        System.out.println("! 0101 = 1010 &2s Comp and 1 add= "+(~c1));
+        System.out.println("! 0011 = 1100 &2s Comp and 1 add= "+(~d1));
+        System.out.println("0101 << 1 = 1010 = "+(c1<<1));
+        System.out.println("0101 >> 1 = 0010 = "+(c1>>1));
+        // Bitwise Operators
+        // ---
+        // Example c1 101 = 5& d1 11 = 3
+        // 0101 & 0011 = 0001 = 1
+        // 0101 | 0011 = 0111 = 7
+        // 0101 ^ 0011 = 0110 = 6
+        // ! 0101 = 1010 &2s Comp and 1 add= -6
+        // ! 0011 = 1100 &2s Comp and 1 add= -4
+        // 0101 << 1 = 1010 = 10
+        // 0101 >> 1 = 0010 = 2
+
+        // about ~number, eg: ~5
+        // 00000000 00000000 00000000 00000101   (5)
+        // 11111111 11111111 11111111 11111010   (~5)
+            // , AFTER NEGATION
+            // , Conflict with Sign of Sign Numbers
+                // 0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  → positive
+                // 1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  → negative
+        // 00000000 00000000 00000000 00000101   (positive 5)
+        // 11111111 11111111 11111111 11111010   (negative ?)
+        // So Now we use 2nds Comp, (as its easy 5 + (-5) = 0 , Using 2’s complement, a CPU can add both with plain binary addition, no special subtraction circuit needed.)
+            // 11111111 11111111 11111111 11111010
+            // 00000000 00000000 00000000 00000101 (invert bits)
+            // 00000000 00000000 00000000 00000110 (add 1) = 6(that 6 is not the result.That 6 is just part of the process to find which negative number the original binary represents.)
+            // so its -6 , ~5 = -6
+        // ~x  =  -(x+1)
+
+
 
 
 
