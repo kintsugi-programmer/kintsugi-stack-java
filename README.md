@@ -112,6 +112,7 @@
     - [Java Memory Management](#java-memory-management)
     - [Important Keywords](#important-keywords)
     - [Best Practices](#best-practices)
+  - [Resources](#resources)
 
 ## Introduction to Java
 
@@ -2571,6 +2572,11 @@ collection.clear();
 6. Use collections instead of arrays when size is not fixed
 7. Override `equals()` and `hashCode()` when needed
 8. Use interfaces for abstraction and multiple inheritance
+
+## Resources
+
+- https://www.youtube.com/watch?v=7-lK9EpBS_Y
+- https://www.youtube.com/watch?v=vap9ACtc_tU
 
 ---
 End-of-File
